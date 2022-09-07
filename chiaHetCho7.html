@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let numbers = +prompt("Nhập n số đầu chia hết cho 7")
+  let count=0
+  let n = 0
+  let sum = 0
+  if(numbers<=0){
+    alert('Vui lòng nhập lại')
+      location.reload()
+  } else {
+    while (count<numbers){
+      if(n%7===0){
+        sum = sum + n
+        count++
+      }
+      n++
+    }
+  }
+  document.write(sum)
+</script>
+</html>

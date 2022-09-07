@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="fibonacci"></p>
+<h1 id="sum"></h1>
+</body>
+<script>
+  let numbers = +prompt('Nhập n số đầu tiên trong dãy fibonacci')
+  let n1=0,n2=1, nextTerm
+  let sum = 0
+  for (let i = 1; i < numbers+1; i++) {
+    // if(n1%5===0&&n1!==0){
+    //     document.write(n1 + 'là số fibonacci đầu tiên chia hết cho 5')
+    //     break
+    // }
+        document.write(n1+'<br>')
+        sum = sum + n1
+        nextTerm = n1+n2
+        n1=n2
+        n2=nextTerm
+  }
+  document.getElementById('sum').innerText = sum
+
+</script>
+</html>
